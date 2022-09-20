@@ -106,7 +106,10 @@ body {
   display: flex;
   margin-left: auto;
 }
-
+.mail-icon {
+  width: 16px;
+  height: 12px;
+}
 .list-contacts .item:not(:last-child) {
   margin-right: 50px;
 }
