@@ -1,4 +1,5 @@
 :root {
+  --hero-background-color: #c4c4c4;
   --title-text-color: #212121;
   --basic-text-color: #757575;
   --accent-text-color: #2196f3;
@@ -107,8 +108,12 @@ body {
   margin-left: auto;
 }
 .mail-icon {
-  width: 16px;
-  height: 12px;
+  margin-right: 10px;
+}
+.mobile-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
 }
 .list-contacts .item:not(:last-child) {
   margin-right: 50px;
@@ -124,12 +129,25 @@ body {
   padding: 32px 0;
 }
 
+.mail-icon:hover {
+  fill: var(--accent-text-color);
+}
+
 /* hero */
 
 .hero {
   text-align: center;
-
-  background-color: var(--hero-footer-background-color);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  min-height: 600px;
+  background-color: var(--hero-background-color);
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../imeges/hero.jpg');
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   font-weight: 900;
