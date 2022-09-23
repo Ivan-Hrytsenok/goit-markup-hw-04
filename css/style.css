@@ -307,9 +307,9 @@ body {
   display: flex;
   justify-content: center;
 }
-.social-network-wrapp:hover {
+/* .social-network-wrapp:hover {
   background-color: var(--accent-text-color);
-}
+} */
 .social-network-list li:not(:last-child) {
   margin-right: 10px;
 }
@@ -318,9 +318,16 @@ body {
   margin: auto;
   fill: #afb1b8;
 }
-.icon:hover {
+
+.ssss:hover .icon{
   fill: var(--white-color);
 }
+.ssss:hover .social-network-wrapp{
+  background-color: #2196f3;
+}
+/* .icon:hover {
+  fill: var(--white-color);
+} */
 
 /* clients */
 .clients {
