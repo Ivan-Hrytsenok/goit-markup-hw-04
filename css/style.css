@@ -43,6 +43,9 @@ body {
 }
 
 /* logo */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 
 .list {
   list-style: none;
@@ -131,7 +134,10 @@ body {
 }
 
 /* hero */
-.hero {
+.section-hero {
+  margin-top: 5px;
+}
+.hero-wrapp {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -362,10 +368,14 @@ body {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .container-logo-adress {
+  display: flex;
+  flex-direction: column;
   margin-top: 60px;
   margin-bottom: 60px;
+  margin-right: 70px;
 }
 .logo-footer {
   margin-bottom: 20px;
@@ -394,19 +404,50 @@ body {
 .contacts-footer-list li:last-child {
   padding-bottom: 0;
 }
-.social-network-footer{
-  display: inline-block;
-  
+.social-network-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 72px;
+  margin-bottom: 100px;
 }
+.social-network-footer-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-network-footer-list li:not(:last-child) {
+  margin-right: 10px;
+}
+.social-network-footer-wrapp {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
 
+  background-color: #44454e;
+}
+.icon-footer {
+  display: block;
+  margin: auto;
+
+  fill: var(--white-color);
+}
+.social-network-footer-wrapp:hover {
+  background-color: #2196f3;
+}
+.link:focus .social-network-footer-wrapp {
+  background-color: #2196f3;
+}
 .join {
-  display: inline-block;
+  display: flex;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 
   color: var(--white-color);
+  margin-bottom: 20px;
 }
 
 /* PORTFOLIO PAGE */
